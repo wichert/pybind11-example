@@ -9,10 +9,11 @@ import setuptools
 base_path = os.path.dirname(__file__)
 
 ext_modules = [
+    # If you need to link extra libraries or specify extra include directories
+    # see https://docs.python.org/3/extending/building.html#building-c-and-c-extensions-with-distutils
     Extension(
         'wouter',
         glob.glob(os.path.join(base_path, 'src', '*.cc')),
-        include_dirs=[os.path.join(base_path, 'include')],
         language='c++',
         undef_macros=["NDEBUG"],
     ),
