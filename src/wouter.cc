@@ -46,10 +46,13 @@ void exposeClasses(py::module m) {
 
     base
         .def(py::init<>())
+        // You normally does not use getter and setter functions, but use a property.
         .def("getA", &Base::getA)
         .def("setA", &Base::setA)
         .def_property("a", &Base::getA, &Base::setA)
         .def("virt", &PublishBase::virt)
+        // Note that we use a different (PEP8-style) naming scheme in Python
+        // to look more like a standard Python library.
         .def("pure_virtual", &PublishBase::pureVirtual)
         .def("call_pure_virtual", &Base::callPureVirtual)
         ;

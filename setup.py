@@ -89,7 +89,7 @@ setup(
     version='1.0.0',
     author='Wichert Akkerman',
     author_email='wichert@wiggy.net',
-    long_description='',
+    long_description=open('README.rst').read(),
     ext_modules=ext_modules,
     cmdclass={
         'build_ext': BuildExt,
