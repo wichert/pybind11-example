@@ -14,6 +14,7 @@ ext_modules = [
     Extension(
         'wouter',
         glob.glob(os.path.join(base_path, 'src', '*.cc')),
+        include_dirs=[os.path.join(base_path, 'include')],
         language='c++',
         undef_macros=["NDEBUG"],
     ),
