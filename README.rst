@@ -23,6 +23,10 @@ To test the module do the following:
    # Install pytest so we can run the tests
    bin/pip install pytest
 
+If you use Python 2 use ``virtualenv .`` instead of ``python3 -m venv``. You
+will need to have `virtualenv <https://pypi.org/project/virtualenv/>`_
+installed for that to work.
+ 
 You can now run the tests to confirm everything works:
 
 .. code-block:: shell
@@ -44,3 +48,18 @@ You can now run the tests to confirm everything works:
     tests/test_child.py::test_pure_virtual_implementation PASSED
 
     ======================== 8 passed in 0.02 seconds =========================
+
+
+If you make a code change you will need to re-build and install. You can
+do this using pip:
+
+.. code-block:: shell
+
+    bin/pip install --upgrade .
+
+or by using ``setup.py`` directly:
+
+.. code-block:: shell
+
+    bin/python setup.py install
+
