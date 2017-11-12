@@ -1,0 +1,15 @@
+/.cache
+/.eggs
+/bin
+/include
+/lib
+/share
+/.Python
+/build
+/dist
+/var
+/wouter.egg-info
+/pip-selfcheck.json
+/pyvenv.cfg
+__pycache__
+*.pyc

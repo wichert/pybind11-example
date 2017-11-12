@@ -1,0 +1,15 @@
+[*]
+trim_trailing_whitespace = true
+charset = utf-8
+indent_style = space
+
+[**.py]
+indent_size = 4
+
+[**.cc]
+indent_size = 8
+indent_style = tab
+
+[**.hh]
+indent_size = 8
+indent_style = tab
