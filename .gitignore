@@ -11,5 +11,6 @@
 /wouter.egg-info
 /pip-selfcheck.json
 /pyvenv.cfg
+/stamp-build
 __pycache__
 *.pyc
