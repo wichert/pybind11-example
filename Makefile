@@ -1,4 +1,4 @@
-PYTHON	?= python
+PYTHON	?= python3
 SOURCES	:= $(wildcard src/*.{cc,h})
 
 all:: bin/py.test
